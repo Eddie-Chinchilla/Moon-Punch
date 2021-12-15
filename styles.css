@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+/********************************************/
+/********************************************/
+
+/* VARIABLES */
+
+:root {
+    /* COLORS */
+    --light-accent: #FFD100;
+    --neutral: #FDB514;
+    --dark: #FF9200;
+    --dark-accent: #FF6E00;
+    --grey: #2F2F2F;
+    /* FONT */
+    --title: 'Walter Turncoat', sans-serif;
+    --text: 'Barlow', sans-serif;
+    --large: 3rem;
+    --medium: 2.25rem;
+    --small: 1.8rem;
+    /* LAYOUT */
+    --center1em: 1em auto;
+}
+
+/********************************************/
+/********************************************/
+
+/* BASE */
+
+body {
+    font-family: var(--text);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: var(--large);
+}
+
+
+/********************************************/
+/********************************************/
+
+/* LAYOUT */
+
+.main-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.alert {
+    background-color: var(--neutral);
+    margin: 4em auto 2em;
+    width: 85%;
+    padding: 2em;
+    outline: 3px solid black;
+}
+
+.news-card h3 {
+    line-height: 1em;
+}
+
+
+/********************************************/
+/********************************************/
+
+
+/* THEME */
+.main-nav a,
+h2,
+h3,
+.date {
+    font-family: var(--title);
+}
+
+.main-nav a{
+    font-size: var(--medium);
+    color: var(--grey);
+}
+
+.alert p,
+h3,
+.news-card p {
+    font-size: var(--small);
+}
+
+.alert {
+    border-radius: 8px;
+}
+
+.alert span {
+    font-family: var(--title);
+    font-size: var(--medium);
+}
+
+.news-card {
+    width: 70%;
+    margin: var(--center1em);
+    padding: 1.5em;
+    border: 2px solid var(--grey);
+}
+
+.news-card h3 {
+    color: var(--dark);
+    background-color: var(--grey);
+    padding: 0.75em;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: var(--dark-accent);
+}
+
+.twitter {
+    font-size: inherit;
+    color: var(--dark-accent);
+}
+
+
