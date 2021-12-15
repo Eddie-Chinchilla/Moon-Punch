@@ -68,7 +68,7 @@ h2 {
     margin: 4em auto 2em;
     width: 85%;
     padding: 2em;
-    outline: 3px solid black;
+    border: 3px solid black;
 }
 
 .news-card h3 {
